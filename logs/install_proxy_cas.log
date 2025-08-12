@@ -1,0 +1,152 @@
+[2025-08-12 01:58:42] Created squid configuration file: C:\Users\SlowLoris\PycharmProjects\Proxy_JA4_Proj\configs\squid\runtime\squid_no_ssl.conf
+[2025-08-12 01:58:42] Generating new CA key and certificate using cryptography...
+[2025-08-12 01:58:43] Generated CA key: C:\Users\SlowLoris\PycharmProjects\Proxy_JA4_Proj\configs\squid\runtime\proxy-ca.key.pem
+[2025-08-12 01:58:43] Generated CA cert: C:\Users\SlowLoris\PycharmProjects\Proxy_JA4_Proj\configs\squid\runtime\proxy-ca.cert.pem
+[2025-08-12 01:58:43] CA certificate C:\Users\SlowLoris\PycharmProjects\Proxy_JA4_Proj\configs\squid\runtime\proxy-ca.cert.pem is valid.
+[2025-08-12 01:58:43] Skipping CA installation on Windows. This will be handled in the container.
+[2025-08-12 01:58:43] Running in manual mode - searching for existing CA files...
+[2025-08-12 01:58:43] Listing files in mitmproxy CA directory: /mitm_ca
+[2025-08-12 01:58:43] Listing files in squid CA directory: /squid_ca
+[2025-08-12 01:58:43] No proxy CA certificates found to install.
+[2025-08-12 01:58:43] Exists /mitm_ca: False
+[2025-08-12 01:58:43] Exists /squid_ca: False
+[2025-08-12 06:01:30] Created directory: /configs/squid/runtime
+[2025-08-12 06:01:30] Created directory: /configs/mitmproxy/runtime
+[2025-08-12 06:01:30] Created squid configuration file: /configs/squid/runtime/squid_no_ssl.conf
+[2025-08-12 06:01:30] Generating new CA key and certificate using cryptography...
+[2025-08-12 06:01:30] Generated CA key: /configs/squid/runtime/proxy-ca.key.pem
+[2025-08-12 06:01:30] Generated CA cert: /configs/squid/runtime/proxy-ca.cert.pem
+[2025-08-12 06:01:31] CA certificate /configs/squid/runtime/proxy-ca.cert.pem is valid.
+[2025-08-12 06:01:31] Copied /configs/squid/runtime/proxy-ca.cert.pem to /usr/local/share/ca-certificates/proxy-ja4-ca.crt
+[2025-08-12 06:01:33] CA certificates updated.
+[2025-08-12 06:01:33] Running in automatic mode - waiting for proxy CA certificates...
+[2025-08-12 06:01:33] Starting automatic CA certificate installation...
+[2025-08-12 06:01:33] Waiting for /mitm_ca/mitmproxy-ca-cert.pem...
+[2025-08-12 06:01:33] Found /mitm_ca/mitmproxy-ca-cert.pem
+[2025-08-12 06:01:33] Copied /mitm_ca/mitmproxy-ca-cert.pem to /usr/local/share/ca-certificates/mitmproxy-ca.crt
+[2025-08-12 06:01:33] mitmproxy CA certificate installed successfully
+[2025-08-12 06:01:33] Waiting for /shared_ca_cert.pem...
+[2025-08-12 06:01:33] Found /shared_ca_cert.pem
+[2025-08-12 06:01:33] Copied /shared_ca_cert.pem to /usr/local/share/ca-certificates/squid-ca.crt
+[2025-08-12 06:01:33] Squid CA certificate installed successfully
+[2025-08-12 06:01:35] CA certificates updated successfully
+[2025-08-12 06:01:35] Automatic CA installation complete!
+[2025-08-12 06:01:35] CA installation complete. Container ready for testing.
+[2025-08-12 09:09:53] CA key and certificate already exist.
+[2025-08-12 09:09:53] CA certificate C:\Users\SlowLoris\PycharmProjects\Proxy_JA4_Proj\configs\squid\runtime\proxy-ca.cert.pem is valid.
+[2025-08-12 09:09:53] Skipping CA installation on Windows. This will be handled in the container.
+[2025-08-12 09:09:53] Running in manual mode - searching for existing CA files...
+[2025-08-12 09:09:53] Listing files in mitmproxy CA directory: /mitm_ca
+[2025-08-12 09:09:53] Listing files in squid CA directory: /squid_ca
+[2025-08-12 09:09:53] No proxy CA certificates found to install.
+[2025-08-12 09:09:53] Exists /mitm_ca: False
+[2025-08-12 09:09:53] Exists /squid_ca: False
+[2025-08-12 13:11:57] CA key and certificate already exist.
+[2025-08-12 13:11:57] CA certificate /configs/squid/runtime/proxy-ca.cert.pem is valid.
+[2025-08-12 13:11:57] Copied /configs/squid/runtime/proxy-ca.cert.pem to /usr/local/share/ca-certificates/proxy-ja4-ca.crt
+[2025-08-12 13:12:01] CA certificates updated.
+[2025-08-12 13:12:01] Running in automatic mode - waiting for proxy CA certificates...
+[2025-08-12 13:12:01] Starting automatic CA certificate installation...
+[2025-08-12 13:12:01] Waiting for /mitm_ca/mitmproxy-ca-cert.pem...
+[2025-08-12 13:12:01] Found /mitm_ca/mitmproxy-ca-cert.pem
+[2025-08-12 13:12:01] Copied /mitm_ca/mitmproxy-ca-cert.pem to /usr/local/share/ca-certificates/mitmproxy-ca.crt
+[2025-08-12 13:12:01] mitmproxy CA certificate installed successfully
+[2025-08-12 13:12:01] Waiting for /shared_ca_cert.pem...
+[2025-08-12 13:12:01] Found /shared_ca_cert.pem
+[2025-08-12 13:12:01] Copied /shared_ca_cert.pem to /usr/local/share/ca-certificates/squid-ca.crt
+[2025-08-12 13:12:01] Squid CA certificate installed successfully
+[2025-08-12 13:12:03] CA certificates updated successfully
+[2025-08-12 13:12:03] Automatic CA installation complete!
+[2025-08-12 13:12:03] CA installation complete. Container ready for testing.
+[2025-08-12 13:12:41] Created directory: /configs/squid/runtime
+[2025-08-12 13:12:41] Created directory: /configs/mitmproxy/runtime
+[2025-08-12 13:12:41] Created squid configuration file: /configs/squid/runtime/squid_no_ssl.conf
+[2025-08-12 13:12:41] Generating new CA key and certificate using cryptography...
+[2025-08-12 13:12:43] Generated CA key: /configs/squid/runtime/proxy-ca.key.pem
+[2025-08-12 13:12:43] Generated CA cert: /configs/squid/runtime/proxy-ca.cert.pem
+[2025-08-12 13:12:43] CA certificate /configs/squid/runtime/proxy-ca.cert.pem is valid.
+[2025-08-12 13:12:43] Copied /configs/squid/runtime/proxy-ca.cert.pem to /usr/local/share/ca-certificates/proxy-ja4-ca.crt
+[2025-08-12 13:12:45] CA certificates updated.
+[2025-08-12 13:12:45] Running in automatic mode - waiting for proxy CA certificates...
+[2025-08-12 13:12:45] Starting automatic CA certificate installation...
+[2025-08-12 13:12:45] Waiting for /mitm_ca/mitmproxy-ca-cert.pem...
+[2025-08-12 13:12:45] Found /mitm_ca/mitmproxy-ca-cert.pem
+[2025-08-12 13:12:45] Copied /mitm_ca/mitmproxy-ca-cert.pem to /usr/local/share/ca-certificates/mitmproxy-ca.crt
+[2025-08-12 13:12:45] mitmproxy CA certificate installed successfully
+[2025-08-12 13:12:45] Waiting for /shared_ca_cert.pem...
+[2025-08-12 13:12:45] Found /shared_ca_cert.pem
+[2025-08-12 13:12:45] Copied /shared_ca_cert.pem to /usr/local/share/ca-certificates/squid-ca.crt
+[2025-08-12 13:12:45] Squid CA certificate installed successfully
+[2025-08-12 13:12:47] CA certificates updated successfully
+[2025-08-12 13:12:47] Automatic CA installation complete!
+[2025-08-12 13:12:47] CA installation complete. Container ready for testing.
+[2025-08-12 09:22:25] CA key and certificate already exist.
+[2025-08-12 09:22:25] CA certificate C:\Users\SlowLoris\PycharmProjects\Proxy_JA4_Proj\configs\squid\runtime\proxy-ca.cert.pem is valid.
+[2025-08-12 09:22:25] Skipping CA installation on Windows. This will be handled in the container.
+[2025-08-12 09:22:25] Running in manual mode - searching for existing CA files...
+[2025-08-12 09:22:25] Listing files in mitmproxy CA directory: /mitm_ca
+[2025-08-12 09:22:25] Listing files in squid CA directory: /squid_ca
+[2025-08-12 09:22:25] No proxy CA certificates found to install.
+[2025-08-12 09:22:25] Exists /mitm_ca: False
+[2025-08-12 09:22:25] Exists /squid_ca: False
+[2025-08-12 13:23:36] Created directory: /configs/squid/runtime
+[2025-08-12 13:23:36] Created directory: /configs/mitmproxy/runtime
+[2025-08-12 13:23:36] Created squid configuration file: /configs/squid/runtime/squid_no_ssl.conf
+[2025-08-12 13:23:36] Generating new CA key and certificate using cryptography...
+[2025-08-12 13:23:36] Generated CA key: /configs/squid/runtime/proxy-ca.key.pem
+[2025-08-12 13:23:36] Generated CA cert: /configs/squid/runtime/proxy-ca.cert.pem
+[2025-08-12 13:23:36] CA certificate /configs/squid/runtime/proxy-ca.cert.pem is valid.
+[2025-08-12 13:23:36] Copied /configs/squid/runtime/proxy-ca.cert.pem to /usr/local/share/ca-certificates/proxy-ja4-ca.crt
+[2025-08-12 13:23:38] CA certificates updated.
+[2025-08-12 13:23:38] Running in automatic mode - waiting for proxy CA certificates...
+[2025-08-12 13:23:38] Starting automatic CA certificate installation...
+[2025-08-12 13:23:38] Waiting for /mitm_ca/mitmproxy-ca-cert.pem...
+[2025-08-12 13:23:38] Found /mitm_ca/mitmproxy-ca-cert.pem
+[2025-08-12 13:23:38] Copied /mitm_ca/mitmproxy-ca-cert.pem to /usr/local/share/ca-certificates/mitmproxy-ca.crt
+[2025-08-12 13:23:38] mitmproxy CA certificate installed successfully
+[2025-08-12 13:23:38] Waiting for /shared_ca_cert.pem...
+[2025-08-12 13:23:38] Found /shared_ca_cert.pem
+[2025-08-12 13:23:38] Copied /shared_ca_cert.pem to /usr/local/share/ca-certificates/squid-ca.crt
+[2025-08-12 13:23:38] Squid CA certificate installed successfully
+[2025-08-12 13:23:41] CA certificates updated successfully
+[2025-08-12 13:23:41] Automatic CA installation complete!
+[2025-08-12 13:23:41] CA installation complete. Container ready for testing.
+[2025-08-12 13:45:19] Created directory: /configs/squid/runtime
+[2025-08-12 13:45:19] Created directory: /configs/mitmproxy/runtime
+[2025-08-12 13:45:19] Created squid configuration file: /configs/squid/runtime/squid_no_ssl.conf
+[2025-08-12 13:45:19] Generating new CA key and certificate using cryptography...
+[2025-08-12 13:45:21] Generated CA key: /configs/squid/runtime/proxy-ca.key.pem
+[2025-08-12 13:45:21] Generated CA cert: /configs/squid/runtime/proxy-ca.cert.pem
+[2025-08-12 13:45:21] CA certificate /configs/squid/runtime/proxy-ca.cert.pem is valid.
+[2025-08-12 13:45:21] Copied /configs/squid/runtime/proxy-ca.cert.pem to /usr/local/share/ca-certificates/proxy-ja4-ca.crt
+[2025-08-12 13:45:26] CA certificates updated.
+[2025-08-12 13:45:26] Running in automatic mode - waiting for proxy CA certificates...
+[2025-08-12 13:45:26] Starting automatic CA certificate installation...
+[2025-08-12 13:45:26] Waiting for /mitm_ca/mitmproxy-ca-cert.pem...
+[2025-08-12 13:45:26] Found /mitm_ca/mitmproxy-ca-cert.pem
+[2025-08-12 13:45:26] Copied /mitm_ca/mitmproxy-ca-cert.pem to /usr/local/share/ca-certificates/mitmproxy-ca.crt
+[2025-08-12 13:45:26] mitmproxy CA certificate installed successfully
+[2025-08-12 13:45:26] Waiting for /shared_ca_cert.pem...
+[2025-08-12 13:45:26] Found /shared_ca_cert.pem
+[2025-08-12 13:45:26] Copied /shared_ca_cert.pem to /usr/local/share/ca-certificates/squid-ca.crt
+[2025-08-12 13:45:26] Squid CA certificate installed successfully
+[2025-08-12 13:45:29] CA certificates updated successfully
+[2025-08-12 13:45:29] Automatic CA installation complete!
+[2025-08-12 13:45:29] CA installation complete. Container ready for testing.
+[2025-08-12 09:56:05] CA key and certificate already exist.
+[2025-08-12 09:56:05] CA certificate C:\Users\SlowLoris\PycharmProjects\Proxy_JA4_Proj\configs\squid\runtime\proxy-ca.cert.pem is valid.
+[2025-08-12 09:56:05] Skipping CA installation on Windows. This will be handled in the container.
+[2025-08-12 09:56:05] Running in manual mode - searching for existing CA files...
+[2025-08-12 09:56:05] Listing files in mitmproxy CA directory: /mitm_ca
+[2025-08-12 09:56:05] Listing files in squid CA directory: /squid_ca
+[2025-08-12 09:56:05] No proxy CA certificates found to install.
+[2025-08-12 09:56:05] Exists /mitm_ca: False
+[2025-08-12 09:56:05] Exists /squid_ca: False
+[2025-08-12 09:56:49] CA key and certificate already exist.
+[2025-08-12 09:56:49] CA certificate C:\Users\SlowLoris\PycharmProjects\Proxy_JA4_Proj\configs\squid\runtime\proxy-ca.cert.pem is valid.
+[2025-08-12 09:56:49] Skipping CA installation on Windows. This will be handled in the container.
+[2025-08-12 09:56:49] Running in manual mode - verifying CA files...
+[2025-08-12 09:57:20] CA key and certificate already exist.
+[2025-08-12 09:57:20] CA certificate C:\Users\SlowLoris\PycharmProjects\Proxy_JA4_Proj\configs\squid\runtime\proxy-ca.cert.pem is valid.
+[2025-08-12 09:57:20] Skipping CA installation on Windows. This will be handled in the container.
+[2025-08-12 09:57:20] Running in manual mode - verifying CA files...

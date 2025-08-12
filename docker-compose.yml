@@ -1,0 +1,79 @@
+services:
+  mitmproxy:
+    image: mitmproxy/mitmproxy:${MITMPROXY_TAG:-latest}
+    container_name: mitmproxy_poc
+    command: ["mitmdump", "--mode", "regular", "--listen-host", "0.0.0.0", "--listen-port", "8080", "--set", "confdir=/home/mitmproxy/.mitmproxy"]
+    ports:
+      - "8081:8080" # host port for convenience
+    networks:
+      - pocnet
+    volumes:
+      - ./configs/mitmproxy/runtime:/home/mitmproxy/.mitmproxy
+      - ./configs/squid/runtime:/shared_ca:ro
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import socket; socket.create_connection(('localhost', 8080), timeout=5)"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  squid:
+    build:
+      context: ./docker/squid
+      dockerfile: Dockerfile
+    image: squid_ssl_custom:latest
+    container_name: squid_poc
+    ports:
+      - "3129:3128"  # Basic HTTP proxy
+    networks:
+      - pocnet
+    volumes:
+      - ./configs/squid/templates/ssl_bump_only.conf:/etc/squid/squid.conf:ro
+      - ./logs/squid:/var/log/squid
+    healthcheck:
+      test: ["CMD", "nc", "-z", "localhost", "3128"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  capture:
+    image: nicolaka/netshoot:latest
+    container_name: capture_poc
+    command: sleep 3650d
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    network_mode: host
+    volumes:
+      - ./captures:/captures
+    depends_on:
+      - squid
+      - mitmproxy
+
+  client:
+    build:
+      context: .
+      dockerfile: ./docker/client/Dockerfile
+    image: client_custom:latest
+    container_name: client_poc
+    networks:
+      - pocnet
+    volumes:
+      - ./tests:/tests
+      - ./captures:/captures
+      - ./configs/mitmproxy/runtime:/mitm_ca:ro
+      - ./configs/squid/runtime/proxy-ca.cert.pem:/shared_ca_cert.pem:ro
+      - ./logs:/logs
+    working_dir: /tests
+    depends_on:
+      squid:
+        condition: service_healthy
+      mitmproxy:
+        condition: service_healthy
+      capture:
+        condition: service_started
+    restart: unless-stopped
+
+networks:
+  pocnet:
+    driver: bridge

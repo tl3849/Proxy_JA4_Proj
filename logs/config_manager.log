@@ -1,0 +1,8 @@
+2025-08-12 09:17:43,382 - __main__ - ERROR - Failed to calculate hash for C:\Users\SlowLoris\PycharmProjects\Proxy_JA4_Proj\proxies\squid\squid.conf: [Errno 2] No such file or directory: 'C:\\Users\\SlowLoris\\PycharmProjects\\Proxy_JA4_Proj\\proxies\\squid\\squid.conf'
+2025-08-12 09:17:43,383 - __main__ - ERROR - Failed to calculate hash for C:\Users\SlowLoris\PycharmProjects\Proxy_JA4_Proj\proxies\mitmproxy\mitmproxy.conf: [Errno 2] No such file or directory: 'C:\\Users\\SlowLoris\\PycharmProjects\\Proxy_JA4_Proj\\proxies\\mitmproxy\\mitmproxy.conf'
+2025-08-12 09:22:13,365 - __main__ - INFO - Created ssl_bump_only config for squid
+2025-08-12 09:22:13,369 - __main__ - INFO - Created ssl_bump_with_auth config for squid
+2025-08-12 09:22:13,371 - __main__ - INFO - Created ssl_bump_with_caching config for squid
+2025-08-12 09:22:13,372 - __main__ - INFO - Created regular config for mitmproxy
+2025-08-12 09:22:13,374 - __main__ - INFO - Created transparent config for mitmproxy
+2025-08-12 09:22:13,378 - __main__ - INFO - Created socks config for mitmproxy

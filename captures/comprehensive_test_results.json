@@ -1,0 +1,136 @@
+{
+  "test_run": {
+    "timestamp": "2025-08-12T13:48:05.692491",
+    "total_proxies": 3,
+    "total_tests": 12,
+    "successful_tests": 11
+  },
+  "proxy_configs": [
+    {
+      "name": "direct",
+      "env": null,
+      "proxy_env": {},
+      "description": "Direct connection (no proxy)"
+    },
+    {
+      "name": "squid",
+      "env": {
+        "http_proxy": "http://squid_poc:3128",
+        "https_proxy": "http://squid_poc:3128"
+      },
+      "description": "Squid proxy with SSL bump"
+    },
+    {
+      "name": "mitmproxy",
+      "env": {
+        "http_proxy": "http://mitmproxy_poc:8080",
+        "https_proxy": "http://mitmproxy_poc:8080"
+      },
+      "description": "mitmproxy with TLS interception"
+    }
+  ],
+  "test_hosts": [
+    "http://httpbin.org/get",
+    "https://httpbin.org/get",
+    "http://example.com",
+    "https://example.com"
+  ],
+  "results": [
+    {
+      "proxy": "direct",
+      "url": "http://httpbin.org/get",
+      "success": true,
+      "return_code": 0,
+      "stderr": null,
+      "timestamp": "2025-08-12T13:47:22.389968"
+    },
+    {
+      "proxy": "direct",
+      "url": "https://httpbin.org/get",
+      "success": true,
+      "return_code": 0,
+      "stderr": null,
+      "timestamp": "2025-08-12T13:47:25.210699"
+    },
+    {
+      "proxy": "direct",
+      "url": "http://example.com",
+      "success": true,
+      "return_code": 0,
+      "stderr": null,
+      "timestamp": "2025-08-12T13:47:25.372224"
+    },
+    {
+      "proxy": "direct",
+      "url": "https://example.com",
+      "success": true,
+      "return_code": 0,
+      "stderr": null,
+      "timestamp": "2025-08-12T13:47:25.597816"
+    },
+    {
+      "proxy": "squid",
+      "url": "http://httpbin.org/get",
+      "success": true,
+      "return_code": 0,
+      "stderr": null,
+      "timestamp": "2025-08-12T13:47:35.814970"
+    },
+    {
+      "proxy": "squid",
+      "url": "https://httpbin.org/get",
+      "success": true,
+      "return_code": 0,
+      "stderr": null,
+      "timestamp": "2025-08-12T13:47:41.230129"
+    },
+    {
+      "proxy": "squid",
+      "url": "http://example.com",
+      "success": true,
+      "return_code": 0,
+      "stderr": null,
+      "timestamp": "2025-08-12T13:47:41.249912"
+    },
+    {
+      "proxy": "squid",
+      "url": "https://example.com",
+      "success": true,
+      "return_code": 0,
+      "stderr": null,
+      "timestamp": "2025-08-12T13:47:41.830576"
+    },
+    {
+      "proxy": "mitmproxy",
+      "url": "http://httpbin.org/get",
+      "success": false,
+      "return_code": 28,
+      "stderr": "curl: (28) Operation timed out after 15000 milliseconds with 0 bytes received\n",
+      "timestamp": "2025-08-12T13:48:01.859595"
+    },
+    {
+      "proxy": "mitmproxy",
+      "url": "https://httpbin.org/get",
+      "success": true,
+      "return_code": 0,
+      "stderr": null,
+      "timestamp": "2025-08-12T13:48:05.214024"
+    },
+    {
+      "proxy": "mitmproxy",
+      "url": "http://example.com",
+      "success": true,
+      "return_code": 0,
+      "stderr": null,
+      "timestamp": "2025-08-12T13:48:05.373376"
+    },
+    {
+      "proxy": "mitmproxy",
+      "url": "https://example.com",
+      "success": true,
+      "return_code": 0,
+      "stderr": null,
+      "timestamp": "2025-08-12T13:48:05.609929"
+    }
+  ]
+}
